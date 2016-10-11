@@ -2,6 +2,7 @@
     <!-- TODO: search & sort -->
     <input type="text" placeholder="Search..." @onchange="" />
     <select>
+      <option>Sort By:</option>
       <option>Name</option>
       <option>Rating</option>
     </select>

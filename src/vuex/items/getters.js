@@ -12,12 +12,10 @@
 // but also looks up the title and price, since we only store the IDs
 // in the watchlist
 export const watchlistMovies = state => {
-  return state.watchlist.added.map(({ id, quantity }) => {
+  return state.watchlist.added.map(({ id }) => {
     const item = state.items.all.find(p => p.id === id)
     return {
-      title: item.title,
-      price: item.price,
-      quantity
+      title: item.title
     }
   })
 }
